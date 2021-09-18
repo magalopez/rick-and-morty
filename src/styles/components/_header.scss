@@ -22,11 +22,13 @@
     background: transparent;
     border: 1px solid yellowgreen;
     font-size: 10px;
+    cursor: pointer;
   }
 
   &--dark{
     transition: .5s;
     background: #1E1E24;
+    // background-color: #0F0326;
 
     h1{
       color:#F2F4F3

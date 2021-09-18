@@ -1,0 +1,72 @@
+.card{
+  display: flex;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  background-color: #e9e3e6;
+  color: #170A1C;
+  justify-content: space-between;
+
+  @media (min-width: 768px){
+    margin: 0 0.5rem 1rem 0.5rem;
+    min-width: 24rem;
+  }
+
+  &.dark{
+    background: #1E1E24;
+    color:#F2F4F3
+  }
+  
+  &__image{
+    max-width: 8rem;
+    border-radius: 16px;
+    padding: .5rem;
+  }
+
+  &__info{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    max-width: 12rem;
+    width: 12rem;
+    padding: 0.5rem;
+    font-size: 12px;
+    font-family: $poppins;
+
+    &--top{
+      display: flex;
+      flex-flow: column;
+
+      h2{ 
+        font-size: 14px;
+      }
+      span{
+        font-size: 8px;
+      }
+    }
+
+    &--mid{
+      display: flex;
+      flex-flow: column;
+
+      span{
+        font-size: 8px;
+      }
+
+      p{
+        font-size: 10px;
+      }
+    }
+  }
+
+  &__button{
+    border-radius: 0.5rem;
+    background: #e9e3e6;
+    font-size: 8px;
+    font-weight: 800;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    margin-top: .5rem;
+    margin-right: .5rem
+  }
+}

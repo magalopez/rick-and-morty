@@ -1,0 +1,23 @@
+.container{
+  margin: 0 auto;  
+  display: flex;
+  flex-flow: column;
+  width: 90%;
+  padding-top: 1rem;
+  
+  @media (min-width: 768px){
+    width: 50rem ;
+  }
+
+  h2{
+    font-family: $poppins;
+  }
+}
+
+.content{
+  
+  &--dark{
+    background-color: #272635;
+    color:#F2F4F3
+  }
+}
