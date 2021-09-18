@@ -1,16 +1,18 @@
-import React, { useState } from 'react'
+ import React, { useContext } from 'react'
+ import DarkModeContext from '../context/DarkModeContext';
 
 export const Header = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const { darkMode, setDarkMode } = useContext(DarkModeContext)
 
   const handleMode = () => {
     setDarkMode(!darkMode)
   }
 
+
   return (
-    <div className={`header header--${darkMode ? "dark" : "light"}`}>
+    <header className={`header header--${darkMode ? "dark" : "light"}`}>
       <h1>Rick and Morti API</h1>
       <button type="button" onClick={handleMode}>{darkMode ?  "Dark Mode" : "Light Mode"}</button>
-    </div>
+    </header>
   )
 }
